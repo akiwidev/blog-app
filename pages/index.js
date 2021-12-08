@@ -1,16 +1,6 @@
 import Head from "next/head";
 import { PostCard, Categories, PostWidget } from "../components";
-
-const posts = [
-  {
-    title: "Kumamoto's Mt. Aso",
-    excerpt: "Explore one of the best sights in Kumamoto.",
-  },
-  {
-    title: "Chiba's Mt. Nokogiri",
-    excerpt: "See for yourself the jagged beauty of Mt. Nokogiri.",
-  },
-];
+import { getPosts } from "../services";
 
 export default function Home() {
   return (
