@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import Link from "next/link";
 
 const categories = [
-  { name: "Mt.Aso", slug: "mt-aso" },
-  { name: "Mt.Nokogiri", slug: "mt-nokogiri" },
+  { name: "Interesting Places", slug: "interesting-places" },
+  { name: "Delicious Eats", slug: "delicious-eats" },
 ];
 
 const Header = () => {
