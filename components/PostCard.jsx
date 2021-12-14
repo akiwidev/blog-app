@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const PostCard = ({ post }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
+    <div className="bg-slate-50 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-md pb-80 mb-6">
         <img
           src={post.featuredImage.url}
@@ -28,7 +28,7 @@ const PostCard = ({ post }) => {
             {post.author.name}
           </p>
         </div>
-        <div className="font-medium text-slate-700">
+        <div className="font-medium text-slate-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 inline mr-2 text-red-500"
