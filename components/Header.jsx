@@ -12,7 +12,7 @@ const Header = () => {
       <div className="border-b w-full inline-block border-slate-50 py-8">
         <div className="md:float-left block">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-4xl text-slate-900">
+            <span className="cursor-pointer font-bold text-4xl text-slate-900 transition ease-in-out duration-500 hover:-translate-y-1">
               Travel Japan
             </span>
           </Link>
