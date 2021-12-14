@@ -5,14 +5,14 @@ import Link from "next/link";
 import { getRecentPosts, getSimilarPosts } from "../services";
 
 const PostWidget = ({ categories, slug }) => {
-  const [relatedPosts, setrelatedPosts] = useState([]);
+  const [relatedPosts, setRelatedPosts] = useState([]);
   useEffect(() => {
     if (slug) {
       getSimilarPosts(categories, slug).then((result) =>
-        setrelatedPosts(result)
+        setRelatedPosts(result)
       );
     } else {
-      getRecentPosts().then((result) => setrelatedPosts(result));
+      getRecentPosts().then((result) => setRelatedPosts(result));
     }
   }, [slug]);
 
