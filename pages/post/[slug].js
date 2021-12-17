@@ -10,6 +10,11 @@ import {
 import { getPosts, getPostDetails } from "../../services";
 
 const PostDetails = ({ post }) => {
+  console.log(post);
+  console.log(post.slug);
+  console.log(post.categories);
+  console.log(post.categories.map((category) => category.name));
+
   return (
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -24,7 +29,7 @@ const PostDetails = ({ post }) => {
             <PostWidget
               slug={post.slug}
               categories={post.categories.map((category) => {
-                category.slug;
+                category.name;
               })}
             />
             <Categories />
@@ -50,6 +55,6 @@ export async function getStaticPaths() {
 
   return {
     paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
-    fallback: true,
+    fallback: false,
   };
 }
