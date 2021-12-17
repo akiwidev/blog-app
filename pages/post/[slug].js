@@ -10,11 +10,6 @@ import {
 import { getPosts, getPostDetails } from "../../services";
 
 const PostDetails = ({ post }) => {
-  console.log(post);
-  console.log(post.slug);
-  console.log(post.categories);
-  console.log(post.categories.map((category) => category.name));
-
   return (
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

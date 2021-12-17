@@ -5,8 +5,6 @@ import { getPosts } from "../services";
 export default function Home({ posts }) {
   const postCategories = posts.map((post) => post.node.categories);
   const postCategoryNames = postCategories.map((category) => category[0].name);
-  posts.map((post) => console.log(post.node.slug));
-  const postSlugs = posts.map((post) => post.node.slug);
 
   return (
     <div className="container mx-auto px-10 mb-8">
@@ -22,7 +20,7 @@ export default function Home({ posts }) {
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
-            <PostWidget slug={postSlugs} categories={postCategoryNames} />
+            <PostWidget categories={postCategoryNames} />
             <Categories />
           </div>
         </div>
